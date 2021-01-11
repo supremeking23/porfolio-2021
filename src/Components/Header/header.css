@@ -1,0 +1,17 @@
+.header-container {
+	background-image: url("../../assets/img/dtla-blue.jpg");
+	background-position: center;
+	/* background: red; */
+	background-size: cover;
+	height: 100vh;
+}
+
+.image-skill {
+	width: 180px;
+}
+
+footer {
+	background: #000;
+	height: 200px;
+	color: #ffff;
+}
