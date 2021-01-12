@@ -28,6 +28,19 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		flexGrow: 1,
 	},
+
+	navigation: {
+		// display: "block",
+		[theme.breakpoints.down("md")]: {
+			display: "none",
+		},
+	},
+
+	titleIcon: {
+		[theme.breakpoints.down("md")]: {
+			textAlign: "center",
+		},
+	},
 }));
 
 function HideOnScroll(props) {
@@ -61,12 +74,17 @@ export default function Header(props) {
 				<HideOnScroll {...props}>
 					<AppBar>
 						<Toolbar>
-							<Grid container>
+							<Grid container item xs={12} className={classes.titleIcon}>
 								<Typography variant="h6" className={classes.title}>
 									ivanscodehub
 								</Typography>
 							</Grid>
-							<Grid container xs={12} justify="flex-end">
+							<Grid
+								container
+								item
+								xs={12}
+								justify="flex-end"
+								className={classes.navigation}>
 								<Typography className={classes.menuLink}>
 									<Link color="inherit" href="#">
 										Home
