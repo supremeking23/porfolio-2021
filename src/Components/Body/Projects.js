@@ -41,6 +41,13 @@ const useStyles = makeStyles((theme) => ({
 			marginLeft: "50px",
 		},
 	},
+
+	skillSection: {
+		paddingLeft: "20px",
+		// [theme.breakpoints.up("md")]: {
+
+		// },
+	},
 }));
 
 export default function Projects() {
@@ -49,9 +56,16 @@ export default function Projects() {
 		<>
 			<section id="projects">
 				<Container maxWidth="lg">
-					<Grid container>
-						<Grid item md={12} xs={12}>
-							<Typography variant="h3">My Projects</Typography>
+					<Grid container className="section-header">
+						<Grid
+							item
+							container
+							md={12}
+							xs={12}
+							justify="center"
+							direction="column"
+							alignItems="center">
+							<Typography variant="h2">My Projects</Typography>
 							<Typography variant="subtitle1">
 								Languages and Technologies that I have learned and applied to my
 								projects
@@ -65,21 +79,21 @@ export default function Projects() {
 								<CardActionArea>
 									<CardMedia
 										component="img"
-										alt="Contemplative Reptile"
+										alt="Js Dice Game"
 										height="180"
 										image={Back}
-										title="Contemplative Reptile"
+										title="Js Dice Game"
 									/>
 									<CardContent>
 										<Typography gutterBottom variant="h5" component="h2">
-											Js Dice Game
+											Javacript Dice Game
 										</Typography>
 										<Typography
-											variant="body2"
+											variant="body1"
 											color="textSecondary"
 											component="p"
 											gutterBottom>
-											A dice game made on from javascript
+											A dice game made from html,css and javascript
 										</Typography>
 
 										<Grid container>
@@ -90,34 +104,31 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid container>
-											<Grid item md={2} xs={2}>
+										<Grid
+											container
+											spacing={2}
+											className={classes.skillSection}>
+											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={classes.typographyStyle}>
+													component="span">
 													<Badge badgeContent={"HTML"} color="primary" />
 												</Typography>
 											</Grid>
-											<Grid item md={2} xs={2}>
+											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={classes.typographyStyle}>
+													component="span">
 													<Badge badgeContent={"CSS"} color="secondary" />
 												</Typography>
 											</Grid>
-											<Grid item md={2} xs={2}>
+											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={cx(
-														classes.typographyStyle,
-														classes.typographyStyle2
-													)}>
+													component="span">
 													<Badge badgeContent={"Javascript"} color="error" />
 												</Typography>
 											</Grid>
@@ -126,38 +137,45 @@ export default function Projects() {
 								</CardActionArea>
 								<CardActions>
 									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://supremeking23.github.io/dice-gamejs/">
 											Live Demo
 										</Link>
 									</Button>
 									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://github.com/supremeking23/dice-gamejs">
 											Github link
 										</Link>
 									</Button>
 								</CardActions>
 							</Card>
 						</Grid>
+
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
 									<CardMedia
 										component="img"
-										alt="Contemplative Reptile"
+										alt="Easy Bank Landing Website"
 										height="180"
 										image={Back}
-										title="Contemplative Reptile"
+										title="Easy Bank Landing Website"
 									/>
 									<CardContent>
 										<Typography gutterBottom variant="h5" component="h2">
-											Js Dice Game
+											Easy Bank Landing Website
 										</Typography>
 										<Typography
-											variant="body2"
+											variant="body1"
 											color="textSecondary"
 											component="p"
 											gutterBottom>
-											A dice game made on from javascript
+											A landing website excercise from front-end mentor
 										</Typography>
 
 										<Grid container>
@@ -168,34 +186,39 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid container>
-											<Grid item md={2} xs={2}>
+										<Grid
+											container
+											spacing={2}
+											className={classes.skillSection}>
+											<Grid item md={3} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={classes.typographyStyle}>
+													component="span">
 													<Badge badgeContent={"HTML"} color="primary" />
 												</Typography>
 											</Grid>
-											<Grid item md={2} xs={2}>
+											<Grid item md={3} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={classes.typographyStyle}>
+													component="span">
 													<Badge badgeContent={"CSS"} color="secondary" />
 												</Typography>
 											</Grid>
-											<Grid item md={2} xs={2}>
+											<Grid item md={3} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={cx(
-														classes.typographyStyle,
-														classes.typographyStyle2
-													)}>
+													component="span">
+													<Badge badgeContent={"SASS"} color="secondary" />
+												</Typography>
+											</Grid>
+											<Grid item md={3} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
 													<Badge badgeContent={"Javascript"} color="error" />
 												</Typography>
 											</Grid>
@@ -204,38 +227,46 @@ export default function Projects() {
 								</CardActionArea>
 								<CardActions>
 									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://supremeking23.github.io/easybank_landingpage/">
 											Live Demo
 										</Link>
 									</Button>
 									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://github.com/supremeking23/easybank_landingpage">
 											Github link
 										</Link>
 									</Button>
 								</CardActions>
 							</Card>
 						</Grid>
+
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
 									<CardMedia
 										component="img"
-										alt="Contemplative Reptile"
+										alt="Js Dice Game"
 										height="180"
 										image={Back}
-										title="Contemplative Reptile"
+										title="Js Dice Game"
 									/>
 									<CardContent>
 										<Typography gutterBottom variant="h5" component="h2">
-											Js Dice Game
+											Pokemon Lite Application
 										</Typography>
 										<Typography
-											variant="body2"
+											variant="body1"
 											color="textSecondary"
 											component="p"
 											gutterBottom>
-											A dice game made on from javascript
+											A web application made from HTML,CSS, Javascript and
+											PokeAPI
 										</Typography>
 
 										<Grid container>
@@ -246,35 +277,40 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid container>
-											<Grid item md={2} xs={2}>
+										<Grid
+											container
+											spacing={6}
+											className={classes.skillSection}>
+											<Grid item md={3} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={classes.typographyStyle}>
+													component="span">
 													<Badge badgeContent={"HTML"} color="primary" />
 												</Typography>
 											</Grid>
-											<Grid item md={2} xs={2}>
+											<Grid item md={3} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={classes.typographyStyle}>
+													component="span">
 													<Badge badgeContent={"CSS"} color="secondary" />
 												</Typography>
 											</Grid>
-											<Grid item md={2} xs={2}>
+											<Grid item md={3} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span"
-													className={cx(
-														classes.typographyStyle,
-														classes.typographyStyle2
-													)}>
+													component="span">
 													<Badge badgeContent={"Javascript"} color="error" />
+												</Typography>
+											</Grid>
+											<Grid item md={3} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"PokeAPI"} color="error" />
 												</Typography>
 											</Grid>
 										</Grid>
@@ -282,12 +318,16 @@ export default function Projects() {
 								</CardActionArea>
 								<CardActions>
 									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
+										<Link
+											underline="none"
+											href="https://supremeking23.github.io/pokemon-lite-js/">
 											Live Demo
 										</Link>
 									</Button>
 									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
+										<Link
+											underline="none"
+											href="https://github.com/supremeking23/pokemon-lite-js">
 											Github link
 										</Link>
 									</Button>
@@ -295,242 +335,6 @@ export default function Projects() {
 							</Card>
 						</Grid>
 					</Grid>
-
-					{/* <Grid container>
-						<Grid item md={4}>
-							<Card className={classes.card}>
-								<CardActionArea>
-									<CardMedia
-										component="img"
-										alt="Contemplative Reptile"
-										height="180"
-										image={Back}
-										title="Contemplative Reptile"
-									/>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											Lizard
-										</Typography>
-										<Typography
-											variant="body2"
-											color="textSecondary"
-											component="p">
-											Lizards are a widespread group of squamate reptiles, with
-											over 6,000 species, ranging across all continents except
-											Antarctica
-											<Grid container>
-												<Grid item md={12} sm={12}>
-													<Typography variant="h6" component="h5" gutterBottom>
-														Technology used:
-													</Typography>
-												</Grid>
-											</Grid>
-											<Grid container>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={classes.typographyStyle}>
-														<Badge badgeContent={"HTML"} color="primary" />
-													</Typography>
-												</Grid>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={classes.typographyStyle}>
-														<Badge badgeContent={"CSS"} color="secondary" />
-													</Typography>
-												</Grid>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={[
-															classes.typographyStyle,
-															classes.typographyStyle2,
-														]}>
-														<Badge badgeContent={"Javascript"} color="error" />
-													</Typography>
-												</Grid>
-											</Grid>
-										</Typography>
-									</CardContent>
-								</CardActionArea>
-								<CardActions>
-									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
-											Live Demo
-										</Link>
-									</Button>
-									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
-											Github link
-										</Link>
-									</Button>
-								</CardActions>
-							</Card>
-						</Grid>
-
-						<Grid item md={4}>
-							<Card className={classes.card}>
-								<CardActionArea>
-									<CardMedia
-										component="img"
-										alt="Contemplative Reptile"
-										height="180"
-										image={Back}
-										title="Contemplative Reptile"
-									/>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											Lizard
-										</Typography>
-										<Typography
-											variant="body2"
-											color="textSecondary"
-											component="p">
-											Lizards are a widespread group of squamate reptiles, with
-											over 6,000 species, ranging across all continents except
-											Antarctica
-											<Grid container>
-												<Grid item md={12} sm={12}>
-													<Typography variant="h6" component="h5" gutterBottom>
-														Technology used:
-													</Typography>
-												</Grid>
-											</Grid>
-											<Grid container>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={classes.typographyStyle}>
-														<Badge badgeContent={"HTML"} color="primary" />
-													</Typography>
-												</Grid>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={classes.typographyStyle}>
-														<Badge badgeContent={"CSS"} color="secondary" />
-													</Typography>
-												</Grid>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={[
-															classes.typographyStyle,
-															classes.typographyStyle2,
-														]}>
-														<Badge badgeContent={"Javascript"} color="error" />
-													</Typography>
-												</Grid>
-											</Grid>
-										</Typography>
-									</CardContent>
-								</CardActionArea>
-								<CardActions>
-									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
-											Live Demo
-										</Link>
-									</Button>
-									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
-											Github link
-										</Link>
-									</Button>
-								</CardActions>
-							</Card>
-						</Grid>
-
-						<Grid item md={4}>
-							<Card className={classes.card}>
-								<CardActionArea>
-									<CardMedia
-										component="img"
-										alt="Contemplative Reptile"
-										height="180"
-										image={Back}
-										title="Contemplative Reptile"
-									/>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											Lizard
-										</Typography>
-										<Typography
-											variant="body2"
-											color="textSecondary"
-											component="p">
-											Lizards are a widespread group of squamate reptiles, with
-											over 6,000 species, ranging across all continents except
-											Antarctica
-											<Grid container>
-												<Grid item md={12} sm={12}>
-													<Typography variant="h6" component="h5" gutterBottom>
-														Technology used:
-													</Typography>
-												</Grid>
-											</Grid>
-											<Grid container>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={classes.typographyStyle}>
-														<Badge badgeContent={"HTML"} color="primary" />
-													</Typography>
-												</Grid>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={classes.typographyStyle}>
-														<Badge badgeContent={"CSS"} color="secondary" />
-													</Typography>
-												</Grid>
-												<Grid item md={2} xs={2}>
-													<Typography
-														variant="body2"
-														color="textSecondary"
-														component="span"
-														className={[
-															classes.typographyStyle,
-															classes.typographyStyle2,
-														]}>
-														<Badge badgeContent={"Javascript"} color="error" />
-													</Typography>
-												</Grid>
-											</Grid>
-										</Typography>
-									</CardContent>
-								</CardActionArea>
-								<CardActions>
-									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
-											Live Demo
-										</Link>
-									</Button>
-									<Button size="small" color="primary">
-										<Link underline="none" href="google.com">
-											Github link
-										</Link>
-									</Button>
-								</CardActions>
-							</Card>
-						</Grid>
-					</Grid> */}
 				</Container>
 			</section>
 		</>

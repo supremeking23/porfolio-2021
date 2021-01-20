@@ -33,9 +33,16 @@ export default function Skills() {
 		<div>
 			<section id="skills">
 				<Container maxWidth="lg">
-					<Grid container>
-						<Grid item md={12} xs={12}>
-							<Typography variant="h3">My Skill</Typography>
+					<Grid container className="section-header">
+						<Grid
+							item
+							container
+							md={12}
+							xs={12}
+							justify="center"
+							direction="column"
+							alignItems="center">
+							<Typography variant="h2">My Skill</Typography>
 							<Typography variant="subtitle1">
 								Languages and Technologies that I have learned and applied to my
 								projects

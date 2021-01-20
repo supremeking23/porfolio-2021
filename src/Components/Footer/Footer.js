@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 
 export default function Footer() {
 	return (
@@ -14,9 +14,9 @@ export default function Footer() {
 							xs={12}
 							justify="center"
 							alignItems="center">
-							<p>
+							<Typography variant="body1">
 								Copyright - 2021 Ivan Christian Jay Funcion, All Right Reserved
-							</p>
+							</Typography>
 						</Grid>
 					</Grid>
 				</Container>

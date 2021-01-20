@@ -12,6 +12,7 @@ import {
 	Grid,
 	useScrollTrigger,
 	Slide,
+	Container,
 } from "@material-ui/core";
 
 import MenuIcon from "@material-ui/icons/Menu";
@@ -109,16 +110,24 @@ export default function Header(props) {
 						</Toolbar>
 					</AppBar>
 				</HideOnScroll>
-				<h1>sdd</h1>
-				<Typed
-					strings={[
-						"<h2>a Full-Stack Web Developer.</h2>",
-						"<h2>Automation and DevOps practitioner.</h2>",
-						"<h2>love everything about code.</h2>",
-					]}
-					typeSpeed={50}
-					loop
-				/>
+
+				<Grid
+					container
+					md={12}
+					alignItems="center"
+					item
+					style={{ height: "100vh" }}>
+					<Typed
+						strings={[
+							`<span class="big">I'am a Full-Stack Web Developer.</span>`,
+							`<span class="big">Automation and DevOps practitioner.</span>`,
+							// `<span class="big">love everything about code.</span>`,
+						]}
+						typeSpeed={50}
+						loop
+						style={{ marginLeft: "40px", color: "white" }}
+					/>
+				</Grid>
 			</div>
 		</>
 	);
