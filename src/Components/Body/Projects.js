@@ -17,7 +17,10 @@ import Back from "../../assets/img/back.jpg";
 
 import Dice from "../../assets/img/diceJs.gif";
 import Bank from "../../assets/img/easy-bank.PNG";
-
+import Pokemon from "../../assets/img/PokemonRecord.gif";
+import Animals from "../../assets/img/animaljs.png";
+import GoogleClone from "../../assets/img/google-clone.PNG";
+import Keeper from "../../assets/img/keeper.PNG";
 import cx from "classnames";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -70,8 +73,8 @@ export default function Projects() {
 							alignItems="center">
 							<Typography variant="h2">My Projects</Typography>
 							<Typography variant="subtitle1">
-								Languages and Technologies that I have learned and applied to my
-								projects
+								From ideation to creation, here are some applications that I
+								have developed
 							</Typography>
 						</Grid>
 					</Grid>
@@ -256,7 +259,7 @@ export default function Projects() {
 										component="img"
 										alt="Pokemon Lite Application"
 										height="180"
-										image={Back}
+										image={Pokemon}
 										title="Pokemon Lite Application"
 									/>
 									<CardContent>
@@ -323,6 +326,7 @@ export default function Projects() {
 									<Button size="small" color="primary">
 										<Link
 											underline="none"
+											target="_blank"
 											href="https://supremeking23.github.io/pokemon-lite-js/">
 											Live Demo
 										</Link>
@@ -330,7 +334,234 @@ export default function Projects() {
 									<Button size="small" color="primary">
 										<Link
 											underline="none"
+											target="_blank"
 											href="https://github.com/supremeking23/pokemon-lite-js">
+											Github link
+										</Link>
+									</Button>
+								</CardActions>
+							</Card>
+						</Grid>
+					</Grid>
+
+					{/* row 2 */}
+					<Grid container>
+						<Grid item md={4}>
+							<Card className={classes.card}>
+								<CardActionArea>
+									<CardMedia
+										component="img"
+										alt="Animal Sound"
+										height="180"
+										image={Animals}
+										title="Animal Sound"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="h2">
+											Animal Sound using Javascript
+										</Typography>
+										<Typography
+											variant="body1"
+											color="textSecondary"
+											component="p"
+											gutterBottom>
+											A web application that features animal sound
+										</Typography>
+
+										<Grid container>
+											<Grid item md={12} sm={12}>
+												<Typography variant="h6" component="h5" gutterBottom>
+													Technology used:
+												</Typography>
+											</Grid>
+										</Grid>
+
+										<Grid
+											container
+											spacing={2}
+											className={classes.skillSection}>
+											<Grid item md={2} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"HTML"} color="primary" />
+												</Typography>
+											</Grid>
+											<Grid item md={2} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"CSS"} color="secondary" />
+												</Typography>
+											</Grid>
+											<Grid item md={2} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"Javascript"} color="error" />
+												</Typography>
+											</Grid>
+										</Grid>
+									</CardContent>
+								</CardActionArea>
+								<CardActions>
+									<Button size="small" color="primary">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://supremeking23.github.io/AnimalJs/">
+											Live Demo
+										</Link>
+									</Button>
+									<Button size="small" color="primary">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://github.com/supremeking23/AnimalJs">
+											Github link
+										</Link>
+									</Button>
+								</CardActions>
+							</Card>
+						</Grid>
+
+						<Grid item md={4}>
+							<Card className={classes.card}>
+								<CardActionArea>
+									<CardMedia
+										component="img"
+										alt="Animal Sound"
+										height="180"
+										image={Keeper}
+										title="Animal Sound"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="h2">
+											Keeper Note
+										</Typography>
+										<Typography
+											variant="body1"
+											color="textSecondary"
+											component="p"
+											gutterBottom>
+											A web application that let's you store notes. Google keep
+											clone.
+										</Typography>
+
+										<Grid container>
+											<Grid item md={12} sm={12}>
+												<Typography variant="h6" component="h5" gutterBottom>
+													Technology used:
+												</Typography>
+											</Grid>
+										</Grid>
+
+										<Grid
+											container
+											spacing={2}
+											className={classes.skillSection}>
+											<Grid item md={2} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"React"} color="primary" />
+												</Typography>
+											</Grid>
+										</Grid>
+									</CardContent>
+								</CardActionArea>
+								<CardActions>
+									<Button size="small" color="primary">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://q5mv0.csb.app/">
+											Live Demo
+										</Link>
+									</Button>
+									<Button size="small" color="primary">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://codesandbox.io/s/keeper-part-3-completed-q5mv0?file=/src/components/App.jsx">
+											Github link
+										</Link>
+									</Button>
+								</CardActions>
+							</Card>
+						</Grid>
+
+						<Grid item md={4}>
+							<Card className={classes.card}>
+								<CardActionArea>
+									<CardMedia
+										component="img"
+										alt="Animal Sound"
+										height="180"
+										image={GoogleClone}
+										title="Animal Sound"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="h2">
+											Google UI Clone
+										</Typography>
+										<Typography
+											variant="body1"
+											color="textSecondary"
+											component="p"
+											gutterBottom>
+											A Google UI clone made from React and Material UI.
+										</Typography>
+
+										<Grid container>
+											<Grid item md={12} sm={12}>
+												<Typography variant="h6" component="h5" gutterBottom>
+													Technology used:
+												</Typography>
+											</Grid>
+										</Grid>
+
+										<Grid
+											container
+											spacing={2}
+											className={classes.skillSection}>
+											<Grid item md={2} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"React"} color="primary" />
+												</Typography>
+											</Grid>
+											<Grid item md={2} xs={3}>
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span">
+													<Badge badgeContent={"MaterialUI"} color="error" />
+												</Typography>
+											</Grid>
+										</Grid>
+									</CardContent>
+								</CardActionArea>
+								<CardActions>
+									<Button size="small" color="primary">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://determined-noether-ee80fb.netlify.app/">
+											Live Demo
+										</Link>
+									</Button>
+									<Button size="small" color="primary">
+										<Link
+											underline="none"
+											target="_blank"
+											href="https://github.com/supremeking23/Google-Clone-React">
 											Github link
 										</Link>
 									</Button>
