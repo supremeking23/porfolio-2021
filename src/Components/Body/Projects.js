@@ -15,6 +15,9 @@ import {
 } from "@material-ui/core";
 import Back from "../../assets/img/back.jpg";
 
+import Dice from "../../assets/img/diceJs.gif";
+import Bank from "../../assets/img/easy-bank.PNG";
+
 import cx from "classnames";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -81,7 +84,7 @@ export default function Projects() {
 										component="img"
 										alt="Js Dice Game"
 										height="180"
-										image={Back}
+										image={Dice}
 										title="Js Dice Game"
 									/>
 									<CardContent>
@@ -163,7 +166,7 @@ export default function Projects() {
 										component="img"
 										alt="Easy Bank Landing Website"
 										height="180"
-										image={Back}
+										image={Bank}
 										title="Easy Bank Landing Website"
 									/>
 									<CardContent>
@@ -251,10 +254,10 @@ export default function Projects() {
 								<CardActionArea>
 									<CardMedia
 										component="img"
-										alt="Js Dice Game"
+										alt="Pokemon Lite Application"
 										height="180"
 										image={Back}
-										title="Js Dice Game"
+										title="Pokemon Lite Application"
 									/>
 									<CardContent>
 										<Typography gutterBottom variant="h5" component="h2">

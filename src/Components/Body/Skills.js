@@ -184,7 +184,7 @@ export default function Skills() {
 								alt="javascript"
 								className="image-skill"
 							/>
-							<Typography variant="h5">Javscript</Typography>
+							<Typography variant="h5">Javascript</Typography>
 						</Grid>
 						<Grid
 							item
