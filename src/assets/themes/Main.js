@@ -3,6 +3,12 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const theme = createMuiTheme({
 	overrides: {
 		MuiTypography: {
+			h1: {
+				fontFamily: ["Poppins", "sans-serif"],
+			},
+			h2: {
+				fontFamily: ["Poppins", "sans-serif"],
+			},
 			h3: {
 				fontFamily: ["Poppins", "sans-serif"],
 			},
@@ -29,6 +35,12 @@ const theme = createMuiTheme({
 		MuiLink: {
 			root: {
 				fontFamily: ["Poppins", "sans-serif"],
+			},
+		},
+
+		MuiAppBar: {
+			colorPrimary: {
+				backgroundColor: "#000000",
 			},
 		},
 	},

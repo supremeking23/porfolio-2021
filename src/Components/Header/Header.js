@@ -14,10 +14,13 @@ import {
 	Slide,
 	Container,
 } from "@material-ui/core";
-
+import Me from "../../assets/img/me.jpg";
+import Me2 from "../../assets/img/me2.jpg";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typed from "react-typed";
 import "./header.css";
+
+import { SocialIcon } from "react-social-icons";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -41,6 +44,32 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("md")]: {
 			textAlign: "center",
 		},
+	},
+
+	h1Style: {
+		fontSize: "4rem",
+		[theme.breakpoints.down("md")]: {
+			fontSize: "1.5rem",
+		},
+	},
+
+	h2Style: {
+		fontSize: "1.5rem",
+		color: "#78909c",
+		[theme.breakpoints.down("md")]: {},
+	},
+
+	myImg: {
+		justifyContent: "flex-end",
+		[theme.breakpoints.down("md")]: { justifyContent: "center" },
+	},
+
+	socialIcon: {
+		marginRight: "1em",
+	},
+
+	socialIcons: {
+		margin: "1em",
 	},
 }));
 
@@ -111,13 +140,17 @@ export default function Header(props) {
 					</AppBar>
 				</HideOnScroll>
 
-				<Grid
-					container
-					md={12}
-					alignItems="center"
-					item
-					style={{ height: "100vh" }}>
-					<Typed
+				<Container>
+					<Grid
+						container
+						md={12}
+						alignItems="center"
+						item
+						style={{
+							height: "100vh",
+							paddingTop: "8em",
+						}}>
+						{/* <Typed
 						strings={[
 							`<span class="big">I'am a Full-Stack Web Developer.</span>`,
 							`<span class="big">Automation and DevOps practitioner.</span>`,
@@ -126,8 +159,47 @@ export default function Header(props) {
 						typeSpeed={50}
 						loop
 						style={{ marginLeft: "40px", color: "white" }}
-					/>
-				</Grid>
+					/> */}
+
+						<Grid item md={12}>
+							<Typography variant="h2" className={classes.h2Style}>
+								Hello, my name is
+							</Typography>
+							<Typography variant="h1" className={classes.h1Style}>
+								Ivan Christian Jay Funcion
+							</Typography>
+							<Typography variant="h1" className={classes.h1Style}>
+								I'm a Full-Stack Web Developer
+							</Typography>
+
+							<div className={classes.socialIcons}>
+								<SocialIcon
+									className={classes.socialIcon}
+									url="https://twitter.com/jaketrent"
+								/>
+
+								<SocialIcon
+									className={classes.socialIcon}
+									url="https://www.facebook.com/ivanchristianjay.funcion/"
+								/>
+
+								<SocialIcon
+									className={classes.socialIcon}
+									url="https://github.com/supremeking23"
+								/>
+
+								<SocialIcon url="https://www.linkedin.com/in/ivan-christian-jay-funcion-17078114a/" />
+							</div>
+
+							{/* <h1>Ivan Christian Jay Funcion</h1>
+							<h1>I'm a Full-Stack Web Developer</h1>
+							<h2>Base in Makati, Philippines</h2> */}
+						</Grid>
+						<Grid container item md={12} style={{}} className={classes.myImg}>
+							<img src={Me} alt="me" className="pic" />
+						</Grid>
+					</Grid>
+				</Container>
 			</div>
 		</>
 	);

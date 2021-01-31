@@ -13,6 +13,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import CancelIcon from "@material-ui/icons/AddCircle";
 import ListAltIcon from "@material-ui/icons/ListAlt";
+import BlockIcon from "@material-ui/icons/Block";
 
 // import MdAdd from "@material-ui/icons/add";
 // import MdClose from "@material-ui/icons/clear";
@@ -50,11 +51,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	aboutContainer: {
-		marginTop: "40px",
-	},
-
-	aboutText: {
-		padding: "40px",
+		// padding: "40px",
+		// background: "pink",
+		paddingBottom: "4em",
 	},
 
 	floatingIcons: {
@@ -65,6 +64,19 @@ const useStyles = makeStyles((theme) => ({
 
 		[theme.breakpoints.down("md")]: {
 			display: "flex",
+		},
+	},
+
+	aboutMeText: {
+		lineHeight: "2",
+	},
+
+	aboutMeTextGrid: {
+		paddingLeft: "14em",
+		paddingRight: "14em",
+		[theme.breakpoints.down("md")]: {
+			paddingLeft: "0",
+			paddingRight: "0",
 		},
 	},
 }));
@@ -88,7 +100,7 @@ export default function Body() {
 					isOpen={isOpen}>
 					<MainButton
 						iconResting={<AddCircleIcon style={{ fontSize: 50 }} />}
-						iconActive={<CancelIcon style={{ fontSize: 50 }} />}
+						iconActive={<BlockIcon style={{ fontSize: 50 }} />}
 						background="white"
 						onClick={() => setIsOpen(!isOpen)}
 						size={56}
@@ -135,36 +147,29 @@ export default function Body() {
 
 			<section id="about">
 				<Container
-					maxWidth="lg"
 					className={classes.aboutContainer}
+					maxWidth="lg"
 					style={{ background: "" }}>
-					<Grid container>
-						<Grid container item md={4} xs={12} justify="flex-start">
-							<img src={Me} alt="me" className="my-pic" />
-						</Grid>
+					<Grid container className="section-header">
 						<Grid
-							container
 							item
-							md={8}
+							container
+							md={12}
 							xs={12}
-							className={classes.aboutText}
-							style={{ background: "" }}
 							justify="center"
+							direction="column"
 							alignItems="center">
-							<Typography variant="h3">
-								Hello! I'm Ivan Christian Jay Funcion, A{" "}
-								<em>
-									<strong>Full Stack Developer</strong>{" "}
-								</em>{" "}
-								From Philippines
-							</Typography>
-							<Typography variant="body1">
-								Dedicated full-stack developer that has an experience in using
-								both frontend and backend technologies. Seeking to help improve
-								your business through proven skills in Software Development, Web
-								Development, Database Development and Cloud Computing.
-							</Typography>
+							<Typography variant="h2">About Me</Typography>
 						</Grid>
+					</Grid>
+
+					<Grid item md={12} className={classes.aboutMeTextGrid}>
+						<Typography variant="body1" className={classes.aboutMeText}>
+							Dedicated full-stack developer that has an experience in using
+							both frontend and backend technologies. Seeking to help improve
+							your business through proven skills in Software Development, Web
+							Development, Database Development and Cloud Computing.
+						</Typography>
 					</Grid>
 				</Container>
 			</section>
@@ -174,3 +179,10 @@ export default function Body() {
 		</>
 	);
 }
+
+// <Typography variant="body1" className={classes.aboutMeText}>
+// 							Dedicated full-stack developer that has an experience in using
+// 							both frontend and backend technologies. Seeking to help improve
+// 							your business through proven skills in Software Development, Web
+// 							Development, Database Development and Cloud Computing.
+// 						</Typography>

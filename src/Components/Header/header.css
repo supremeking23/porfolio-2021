@@ -5,7 +5,8 @@ html {
 }
 
 .header-container {
-	background-image: url("../../assets/img/dtla-blue.jpg");
+	/* background-image: url("../../assets/img/dtla-blue.jpg"); */
+	background-color: #f6f6f6;
 	background-position: center;
 	/* background: red; */
 	background-size: cover;
@@ -28,15 +29,30 @@ footer {
 	margin-bottom: 20px;
 } */
 
-.my-pic {
-	width: 100%;
+.pic {
+	clip-path: polygon(
+		50% 0%,
+		83% 12%,
+		100% 43%,
+		94% 78%,
+		68% 100%,
+		32% 100%,
+		6% 78%,
+		0% 43%,
+		17% 12%
+	);
+
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+	width: 14em;
 	height: auto;
-	border-radius: 50%;
 }
 
 .section-header {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	text-align: center;
 }
 
@@ -50,3 +66,22 @@ footer {
 	top: 20px;
 	position: sticky;
 } */
+
+#about {
+	/* padding-bottom: 4em 4em 0 4em; */
+	background: #000;
+	color: #ffffff;
+}
+
+.svg {
+	overflow: hidden;
+}
+
+#skills {
+	padding-bottom: 2.5em;
+	background: #f6f6f6;
+}
+
+#projects {
+	background: #eeeeee;
+}
