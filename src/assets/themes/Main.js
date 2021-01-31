@@ -4,25 +4,31 @@ const theme = createMuiTheme({
 	overrides: {
 		MuiTypography: {
 			h3: {
-				fontFamily: ["Lato", "Open Sans", "sans-serif"],
+				fontFamily: ["Poppins", "sans-serif"],
 			},
 			h2: {
-				fontFamily: ["Lato", "Open Sans", "sans-serif"],
+				fontFamily: ["Poppins", "sans-serif"],
 			},
 
 			h5: {
-				fontFamily: ["Lato", "Open Sans", "sans-serif"],
+				fontFamily: ["Poppins", "sans-serif"],
 			},
 			body1: {
-				fontFamily: ["Open Sans", "sans-serif"],
-				fontSize: "20px",
-				lineHeight: "25px",
+				fontFamily: ["Poppins", "sans-serif"],
+				// fontSize: "20px",
+				// lineHeight: "25px",
 			},
 
 			subtitle1: {
-				fontFamily: ["Open Sans", "sans-serif"],
-				fontSize: "20px",
-				lineHeight: "25px",
+				fontFamily: ["Poppins", "sans-serif"],
+				// fontSize: "20px",
+				// lineHeight: "25px",
+			},
+		},
+
+		MuiLink: {
+			root: {
+				fontFamily: ["Poppins", "sans-serif"],
 			},
 		},
 	},

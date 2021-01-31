@@ -358,14 +358,15 @@ export default function Projects() {
 									/>
 									<CardContent>
 										<Typography gutterBottom variant="h5" component="h2">
-											Animal Sound using Javascript
+											Animal Sound
 										</Typography>
 										<Typography
 											variant="body1"
 											color="textSecondary"
 											component="p"
 											gutterBottom>
-											A web application that features animal sound
+											A web application that features animal sound using
+											Javascript
 										</Typography>
 
 										<Grid container>
