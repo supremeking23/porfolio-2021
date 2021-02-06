@@ -14,14 +14,23 @@ html {
 }
 
 .image-skill {
-	width: 160px;
-	margin: 20px;
+	width: 5.5rem;
+	margin: 1.25rem;
+}
+
+.project-text {
+	margin-right: 20px;
 }
 
 footer {
 	background: #000;
 	height: 200px;
 	color: #ffff;
+}
+
+.section-container {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 /* .card {
@@ -46,7 +55,7 @@ footer {
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
-	width: 14em;
+	width: 14rem;
 	height: auto;
 }
 
@@ -73,12 +82,28 @@ footer {
 	color: #ffffff;
 }
 
+.mail-link {
+	line-height: 2;
+	color: #3282b8;
+}
+
+.section-title {
+	margin-bottom: 10px;
+}
+.header-title:after {
+	display: block;
+	height: 1px;
+	background-color: #ff851b;
+	content: "";
+	width: 95px;
+	margin: 6px auto 0;
+}
+
 .svg {
 	overflow: hidden;
 }
 
 #skills {
-	padding-bottom: 2.5em;
 	background: #f6f6f6;
 }
 

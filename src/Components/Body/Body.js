@@ -11,7 +11,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import InfoIcon from "@material-ui/icons/Info";
 import HomeIcon from "@material-ui/icons/Home";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-import CancelIcon from "@material-ui/icons/AddCircle";
+
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import BlockIcon from "@material-ui/icons/Block";
 
@@ -21,35 +21,19 @@ import BlockIcon from "@material-ui/icons/Block";
 
 import {
 	Typography,
-	Button,
-	Link,
 	Container,
 	Grid,
-	Box,
-	Card,
-	CardActionArea,
-	CardMedia,
-	CardContent,
-	CardActions,
 	emphasize,
+	Link,
 } from "@material-ui/core";
 
-import Me from "../../assets/img/me.jpg";
+import LightSpeed from "react-reveal/LightSpeed";
 
 import Skills from "./Skills";
 import Projects from "./Projects";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-	card: {
-		marginBottom: "20px",
-		marginRight: "20px",
-		[theme.breakpoints.down("md")]: {
-			marginRight: "0px",
-			marginBottom: "20px",
-		},
-	},
-
 	aboutContainer: {
 		// padding: "40px",
 		// background: "pink",
@@ -77,6 +61,17 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("md")]: {
 			paddingLeft: "0",
 			paddingRight: "0",
+		},
+	},
+
+	h2: {
+		"&::after": {
+			display: "block",
+			height: "1px",
+			backgroundColor: "#ff851b",
+			content: "",
+			width: "95px",
+			margin: "6px auto 0",
 		},
 	},
 }));
@@ -145,7 +140,7 @@ export default function Body() {
 				{/* sdsdds */}
 			</Grid>
 
-			<section id="about">
+			<section id="about" className="section-container">
 				<Container
 					className={classes.aboutContainer}
 					maxWidth="lg"
@@ -159,17 +154,29 @@ export default function Body() {
 							justify="center"
 							direction="column"
 							alignItems="center">
-							<Typography variant="h2">About Me</Typography>
+							<Typography variant="h2" className="header-title">
+								About Me
+							</Typography>
+							{/* <h2>About Me</h2> */}
 						</Grid>
 					</Grid>
 
 					<Grid item md={12} className={classes.aboutMeTextGrid}>
-						<Typography variant="body1" className={classes.aboutMeText}>
-							Dedicated full-stack developer that has an experience in using
-							both frontend and backend technologies. Seeking to help improve
-							your business through proven skills in Software Development, Web
-							Development, Database Development and Cloud Computing.
-						</Typography>
+						<LightSpeed left>
+							<Typography variant="body1" className={classes.aboutMeText}>
+								I am a full stack developer based in the Philippines. Proficient
+								in both front and back end technology.I also have an adequate
+								knowledege in Automation and Cloud Computing Service. My goal is
+								to have more solid knowledge regarding application development,
+								especially in web application development.
+							</Typography>
+							<Link href="mailto:icjfuncion@gmail.com">
+								{" "}
+								<Typography variant="body1" className="mail-link">
+									Let's make something secial today ?
+								</Typography>
+							</Link>
+						</LightSpeed>
 					</Grid>
 				</Container>
 			</section>

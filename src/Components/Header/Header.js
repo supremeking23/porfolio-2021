@@ -20,6 +20,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Typed from "react-typed";
 import "./header.css";
 
+import { LightSpeed, Fade } from "react-reveal";
 import { SocialIcon } from "react-social-icons";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 	},
 	menuLink: {
-		marginRight: theme.spacing(2),
+		marginRight: theme.spacing(3),
+		color: "#999",
 	},
 	title: {
 		flexGrow: 1,
@@ -165,17 +167,21 @@ export default function Header(props) {
 							<Typography variant="h2" className={classes.h2Style}>
 								Hello, my name is
 							</Typography>
-							<Typography variant="h1" className={classes.h1Style}>
-								Ivan Christian Jay Funcion
-							</Typography>
-							<Typography variant="h1" className={classes.h1Style}>
-								I'm a Full-Stack Web Developer
-							</Typography>
+							<LightSpeed left>
+								<Typography variant="h1" className={classes.h1Style}>
+									Ivan Christian Jay Funcion
+								</Typography>
+							</LightSpeed>
+							<LightSpeed right>
+								<Typography variant="h1" className={classes.h1Style}>
+									I'm a Full-Stack Web Developer
+								</Typography>
+							</LightSpeed>
 
 							<div className={classes.socialIcons}>
 								<SocialIcon
 									className={classes.socialIcon}
-									url="https://twitter.com/jaketrent"
+									url="https://twitter.com/god_speed_23/"
 								/>
 
 								<SocialIcon
@@ -196,7 +202,9 @@ export default function Header(props) {
 							<h2>Base in Makati, Philippines</h2> */}
 						</Grid>
 						<Grid container item md={12} style={{}} className={classes.myImg}>
-							<img src={Me} alt="me" className="pic" />
+							<Fade right>
+								<img src={Me} alt="me" className="pic" />
+							</Fade>
 						</Grid>
 					</Grid>
 				</Container>

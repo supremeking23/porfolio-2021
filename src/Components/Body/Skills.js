@@ -31,7 +31,7 @@ import GitSVG from "../../assets/svg/git-icon.svg";
 export default function Skills() {
 	return (
 		<div>
-			<section id="skills">
+			<section id="skills" className="section-container">
 				<Container maxWidth="lg">
 					<Grid container className="section-header">
 						<Grid

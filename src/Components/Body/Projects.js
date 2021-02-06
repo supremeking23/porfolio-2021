@@ -5,20 +5,17 @@ import {
 	Link,
 	Container,
 	Grid,
-	Box,
 	Card,
 	CardActionArea,
 	CardMedia,
 	CardContent,
 	CardActions,
-	Badge,
 } from "@material-ui/core";
-import Back from "../../assets/img/back.jpg";
 
 import Dice from "../../assets/img/diceJs.gif";
 import Bank from "../../assets/img/easy-bank.PNG";
 import Pokemon from "../../assets/img/PokemonRecord.gif";
-import Animals from "../../assets/img/animaljs.png";
+import ChatUs from "../../assets/img/chatus.gif";
 import GoogleClone from "../../assets/img/google-clone.PNG";
 import Keeper from "../../assets/img/keeper.PNG";
 import cx from "classnames";
@@ -49,9 +46,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	skillSection: {
-		paddingLeft: "20px",
+		// paddingLeft: "20px",
 		// [theme.breakpoints.up("md")]: {
-
 		// },
 	},
 }));
@@ -60,7 +56,7 @@ export default function Projects() {
 	const classes = useStyles();
 	return (
 		<>
-			<section id="projects">
+			<section id="projects" className="section-container">
 				<Container maxWidth="lg">
 					<Grid container className="section-header">
 						<Grid
@@ -80,6 +76,7 @@ export default function Projects() {
 					</Grid>
 
 					<Grid container>
+						{/* item 1 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
@@ -118,24 +115,27 @@ export default function Projects() {
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"HTML"} color="primary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													HTML
 												</Typography>
 											</Grid>
 											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"CSS"} color="secondary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													CSS
 												</Typography>
 											</Grid>
 											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"Javascript"} color="error" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Javascript
 												</Typography>
 											</Grid>
 										</Grid>
@@ -161,7 +161,7 @@ export default function Projects() {
 								</CardActions>
 							</Card>
 						</Grid>
-
+						{/* item 2 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
@@ -192,42 +192,46 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid
-											container
-											spacing={2}
-											className={classes.skillSection}>
-											<Grid item md={3} xs={3}>
+										<Grid container item md={12}>
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"HTML"} color="primary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													HTML
 												</Typography>
-											</Grid>
-											<Grid item md={3} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"CSS"} color="secondary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													CSS
 												</Typography>
-											</Grid>
-											<Grid item md={3} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"SASS"} color="secondary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													SASS
 												</Typography>
-											</Grid>
-											<Grid item md={3} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"Javascript"} color="error" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Javascript
 												</Typography>
-											</Grid>
+											</span>
 										</Grid>
 									</CardContent>
 								</CardActionArea>
@@ -251,7 +255,7 @@ export default function Projects() {
 								</CardActions>
 							</Card>
 						</Grid>
-
+						{/* item 3 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
@@ -283,42 +287,46 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid
-											container
-											spacing={6}
-											className={classes.skillSection}>
-											<Grid item md={3} xs={3}>
+										<Grid container item md={12}>
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"HTML"} color="primary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													HTML
 												</Typography>
-											</Grid>
-											<Grid item md={3} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"CSS"} color="secondary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													CSS
 												</Typography>
-											</Grid>
-											<Grid item md={3} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"Javascript"} color="error" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Javascript
 												</Typography>
-											</Grid>
-											<Grid item md={3} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"PokeAPI"} color="error" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													PokeAPI
 												</Typography>
-											</Grid>
+											</span>
 										</Grid>
 									</CardContent>
 								</CardActionArea>
@@ -346,27 +354,28 @@ export default function Projects() {
 
 					{/* row 2 */}
 					<Grid container>
+						{/* item 4 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
 									<CardMedia
 										component="img"
-										alt="Animal Sound"
+										alt="Chat Us Application"
 										height="180"
-										image={Animals}
-										title="Animal Sound"
+										image={ChatUs}
+										title="Chat Us Application"
 									/>
 									<CardContent>
 										<Typography gutterBottom variant="h5" component="h2">
-											Animal Sound
+											Chat Us Application
 										</Typography>
 										<Typography
 											variant="body1"
 											color="textSecondary"
 											component="p"
 											gutterBottom>
-											A web application that features animal sound using
-											Javascript
+											A web application that has a real time chat functionality
+											using chat engine.
 										</Typography>
 
 										<Grid container>
@@ -377,34 +386,26 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid
-											container
-											spacing={2}
-											className={classes.skillSection}>
-											<Grid item md={2} xs={3}>
+										<Grid container item md={12}>
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"HTML"} color="primary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													React
 												</Typography>
-											</Grid>
-											<Grid item md={2} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"CSS"} color="secondary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Chat Engine
 												</Typography>
-											</Grid>
-											<Grid item md={2} xs={3}>
-												<Typography
-													variant="body2"
-													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"Javascript"} color="error" />
-												</Typography>
-											</Grid>
+											</span>
 										</Grid>
 									</CardContent>
 								</CardActionArea>
@@ -413,7 +414,7 @@ export default function Projects() {
 										<Link
 											underline="none"
 											target="_blank"
-											href="https://supremeking23.github.io/AnimalJs/">
+											href="https://youthful-pike-f91484.netlify.app/">
 											Live Demo
 										</Link>
 									</Button>
@@ -421,14 +422,14 @@ export default function Projects() {
 										<Link
 											underline="none"
 											target="_blank"
-											href="https://github.com/supremeking23/AnimalJs">
+											href="https://github.com/supremeking23/Chat-Us-App">
 											Github link
 										</Link>
 									</Button>
 								</CardActions>
 							</Card>
 						</Grid>
-
+						{/* item 5 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
@@ -460,18 +461,26 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid
-											container
-											spacing={2}
-											className={classes.skillSection}>
-											<Grid item md={2} xs={3}>
+										<Grid container item md={12}>
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"React"} color="primary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													React
 												</Typography>
-											</Grid>
+											</span>
+
+											<span className="project-text">
+												<Typography
+													variant="body2"
+													color="textSecondary"
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Material UI
+												</Typography>
+											</span>
 										</Grid>
 									</CardContent>
 								</CardActionArea>
@@ -495,7 +504,7 @@ export default function Projects() {
 								</CardActions>
 							</Card>
 						</Grid>
-
+						{/* item 6 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
 								<CardActionArea>
@@ -526,26 +535,26 @@ export default function Projects() {
 											</Grid>
 										</Grid>
 
-										<Grid
-											container
-											spacing={2}
-											className={classes.skillSection}>
-											<Grid item md={2} xs={3}>
+										<Grid container item md={12}>
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"React"} color="primary" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													React
 												</Typography>
-											</Grid>
-											<Grid item md={2} xs={3}>
+											</span>
+
+											<span className="project-text">
 												<Typography
 													variant="body2"
 													color="textSecondary"
-													component="span">
-													<Badge badgeContent={"MaterialUI"} color="error" />
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Material UI
 												</Typography>
-											</Grid>
+											</span>
 										</Grid>
 									</CardContent>
 								</CardActionArea>
