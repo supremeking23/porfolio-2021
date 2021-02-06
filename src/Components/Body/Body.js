@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
 
 	aboutMeText: {
 		lineHeight: "2",
+		color: "#666",
 	},
 
 	aboutMeTextGrid: {

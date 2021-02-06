@@ -68,7 +68,7 @@ export default function Projects() {
 							direction="column"
 							alignItems="center">
 							<Typography variant="h2">My Projects</Typography>
-							<Typography variant="subtitle1">
+							<Typography variant="subtitle1" className="subtext">
 								From ideation to creation, here are some applications that I
 								have developed
 							</Typography>
@@ -88,20 +88,28 @@ export default function Projects() {
 										title="Js Dice Game"
 									/>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
-											Javacript Dice Game
+										<Typography
+											gutterBottom
+											variant="h5"
+											component="h2"
+											className="card-title">
+											Javascript Dice Game
 										</Typography>
 										<Typography
 											variant="body1"
-											color="textSecondary"
 											component="p"
-											gutterBottom>
+											gutterBottom
+											className="card-description">
 											A dice game made from html,css and javascript
 										</Typography>
 
 										<Grid container>
 											<Grid item md={12} sm={12}>
-												<Typography variant="h6" component="h5" gutterBottom>
+												<Typography
+													variant="h6"
+													component="h5"
+													gutterBottom
+													className="technology-header">
 													Technology used:
 												</Typography>
 											</Grid>
@@ -114,7 +122,7 @@ export default function Projects() {
 											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													HTML
@@ -123,7 +131,7 @@ export default function Projects() {
 											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													CSS
@@ -132,7 +140,7 @@ export default function Projects() {
 											<Grid item md={2} xs={3}>
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													Javascript
@@ -144,6 +152,7 @@ export default function Projects() {
 								<CardActions>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://supremeking23.github.io/dice-gamejs/">
@@ -152,6 +161,7 @@ export default function Projects() {
 									</Button>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://github.com/supremeking23/dice-gamejs">
@@ -173,20 +183,28 @@ export default function Projects() {
 										title="Easy Bank Landing Website"
 									/>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
+										<Typography
+											gutterBottom
+											variant="h5"
+											component="h2"
+											className="card-title">
 											Easy Bank Landing Website
 										</Typography>
 										<Typography
 											variant="body1"
-											color="textSecondary"
 											component="p"
-											gutterBottom>
+											gutterBottom
+											className="card-description">
 											A landing website excercise from front-end mentor
 										</Typography>
 
 										<Grid container>
 											<Grid item md={12} sm={12}>
-												<Typography variant="h6" component="h5" gutterBottom>
+												<Typography
+													variant="h6"
+													component="h5"
+													gutterBottom
+													className="technology-header">
 													Technology used:
 												</Typography>
 											</Grid>
@@ -196,7 +214,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													HTML
@@ -206,7 +224,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													CSS
@@ -216,7 +234,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													SASS
@@ -226,7 +244,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													Javascript
@@ -238,6 +256,7 @@ export default function Projects() {
 								<CardActions>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://supremeking23.github.io/easybank_landingpage/">
@@ -246,6 +265,7 @@ export default function Projects() {
 									</Button>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://github.com/supremeking23/easybank_landingpage">
@@ -267,12 +287,16 @@ export default function Projects() {
 										title="Pokemon Lite Application"
 									/>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
+										<Typography
+											gutterBottom
+											variant="h5"
+											component="h2"
+											className="card-title">
 											Pokemon Lite Application
 										</Typography>
 										<Typography
 											variant="body1"
-											color="textSecondary"
+											className="card-description"
 											component="p"
 											gutterBottom>
 											A web application made from HTML,CSS, Javascript and
@@ -281,7 +305,11 @@ export default function Projects() {
 
 										<Grid container>
 											<Grid item md={12} sm={12}>
-												<Typography variant="h6" component="h5" gutterBottom>
+												<Typography
+													variant="h6"
+													component="h5"
+													gutterBottom
+													className="technology-header">
 													Technology used:
 												</Typography>
 											</Grid>
@@ -291,7 +319,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													HTML
@@ -301,7 +329,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													CSS
@@ -311,7 +339,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													Javascript
@@ -321,7 +349,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													PokeAPI
@@ -335,12 +363,14 @@ export default function Projects() {
 										<Link
 											underline="none"
 											target="_blank"
+											className="card-link-button"
 											href="https://supremeking23.github.io/pokemon-lite-js/">
 											Live Demo
 										</Link>
 									</Button>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://github.com/supremeking23/pokemon-lite-js">
@@ -366,21 +396,29 @@ export default function Projects() {
 										title="Chat Us Application"
 									/>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
+										<Typography
+											gutterBottom
+											variant="h5"
+											component="h2"
+											className="card-title">
 											Chat Us Application
 										</Typography>
 										<Typography
 											variant="body1"
-											color="textSecondary"
 											component="p"
-											gutterBottom>
+											gutterBottom
+											className="card-description">
 											A web application that has a real time chat functionality
 											using chat engine.
 										</Typography>
 
 										<Grid container>
 											<Grid item md={12} sm={12}>
-												<Typography variant="h6" component="h5" gutterBottom>
+												<Typography
+													variant="h6"
+													className="technology-header"
+													component="h5"
+													gutterBottom>
 													Technology used:
 												</Typography>
 											</Grid>
@@ -390,7 +428,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													React
@@ -400,7 +438,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													Chat Engine
@@ -413,6 +451,7 @@ export default function Projects() {
 									<Button size="small" color="primary">
 										<Link
 											underline="none"
+											className="card-link-button"
 											target="_blank"
 											href="https://youthful-pike-f91484.netlify.app/">
 											Live Demo
@@ -420,6 +459,7 @@ export default function Projects() {
 									</Button>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://github.com/supremeking23/Chat-Us-App">
@@ -435,18 +475,22 @@ export default function Projects() {
 								<CardActionArea>
 									<CardMedia
 										component="img"
-										alt="Animal Sound"
+										alt="img"
 										height="180"
 										image={Keeper}
-										title="Animal Sound"
+										title="img"
 									/>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
+										<Typography
+											gutterBottom
+											variant="h5"
+											component="h2"
+											className="card-title">
 											Keeper Note
 										</Typography>
 										<Typography
 											variant="body1"
-											color="textSecondary"
+											className="card-description"
 											component="p"
 											gutterBottom>
 											A web application that let's you store notes. Google keep
@@ -455,7 +499,11 @@ export default function Projects() {
 
 										<Grid container>
 											<Grid item md={12} sm={12}>
-												<Typography variant="h6" component="h5" gutterBottom>
+												<Typography
+													variant="h6"
+													component="h5"
+													gutterBottom
+													className="technology-header">
 													Technology used:
 												</Typography>
 											</Grid>
@@ -465,7 +513,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													React
@@ -475,7 +523,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													Material UI
@@ -487,6 +535,7 @@ export default function Projects() {
 								<CardActions>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://q5mv0.csb.app/">
@@ -495,6 +544,7 @@ export default function Projects() {
 									</Button>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://codesandbox.io/s/keeper-part-3-completed-q5mv0?file=/src/components/App.jsx">
@@ -516,12 +566,16 @@ export default function Projects() {
 										title="Animal Sound"
 									/>
 									<CardContent>
-										<Typography gutterBottom variant="h5" component="h2">
+										<Typography
+											gutterBottom
+											variant="h5"
+											component="h2"
+											className="card-title">
 											Google UI Clone
 										</Typography>
 										<Typography
 											variant="body1"
-											color="textSecondary"
+											className="card-description"
 											component="p"
 											gutterBottom>
 											A Google UI clone made from React and Material UI.
@@ -529,7 +583,11 @@ export default function Projects() {
 
 										<Grid container>
 											<Grid item md={12} sm={12}>
-												<Typography variant="h6" component="h5" gutterBottom>
+												<Typography
+													variant="h6"
+													component="h5"
+													gutterBottom
+													className="technology-header">
 													Technology used:
 												</Typography>
 											</Grid>
@@ -539,7 +597,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													React
@@ -549,7 +607,7 @@ export default function Projects() {
 											<span className="project-text">
 												<Typography
 													variant="body2"
-													color="textSecondary"
+													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
 													Material UI
@@ -561,6 +619,7 @@ export default function Projects() {
 								<CardActions>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://determined-noether-ee80fb.netlify.app/">
@@ -569,6 +628,7 @@ export default function Projects() {
 									</Button>
 									<Button size="small" color="primary">
 										<Link
+											className="card-link-button"
 											underline="none"
 											target="_blank"
 											href="https://github.com/supremeking23/Google-Clone-React">

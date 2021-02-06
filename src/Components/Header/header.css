@@ -6,11 +6,15 @@ html {
 
 .header-container {
 	/* background-image: url("../../assets/img/dtla-blue.jpg"); */
-	background-color: #f6f6f6;
+	background-color: #191919;
 	background-position: center;
 	/* background: red; */
 	background-size: cover;
 	height: 100vh;
+}
+
+.social-svg-background {
+	fill: #eee !important;
 }
 
 .image-skill {
@@ -78,7 +82,7 @@ footer {
 
 #about {
 	/* padding-bottom: 4em 4em 0 4em; */
-	background: #000;
+	background: #222222;
 	color: #ffffff;
 }
 
@@ -91,10 +95,12 @@ footer {
 	margin-bottom: 10px;
 }
 .header-title:after {
+	content: "";
 	display: block;
 	height: 1px;
-	background-color: #ff851b;
-	content: "";
+	/* background-color: #ff851b; */
+	background-color: #307bad;
+
 	width: 95px;
 	margin: 6px auto 0;
 }
@@ -104,9 +110,38 @@ footer {
 }
 
 #skills {
-	background: #f6f6f6;
+	background: #eeeeee;
 }
 
 #projects {
-	background: #eeeeee;
+	background: #191919;
+	color: #ffffff;
+}
+
+.subtext {
+	color: #666;
+}
+
+.card-title {
+	color: #eeee;
+}
+
+.card-description {
+	color: #666;
+}
+
+.technology-header {
+	color: #eeee;
+}
+
+.technology-text {
+	color: #666;
+}
+
+.card-link-button {
+	color: #666 !important;
+}
+
+.card-link-button:hover {
+	color: #eeee !important;
 }

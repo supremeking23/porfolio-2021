@@ -28,9 +28,6 @@ const theme = createMuiTheme({
 				// fontSize: "20px",
 				// lineHeight: "25px",
 			},
-			colorTextSecondary: {
-				// color: "#FFFFFF",
-			},
 		},
 
 		MuiLink: {
@@ -42,6 +39,12 @@ const theme = createMuiTheme({
 		MuiAppBar: {
 			colorPrimary: {
 				backgroundColor: "#08090A",
+			},
+		},
+
+		MuiPaper: {
+			root: {
+				backgroundColor: "#222222",
 			},
 		},
 	},

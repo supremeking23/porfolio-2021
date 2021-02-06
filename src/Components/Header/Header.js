@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 	h1Style: {
 		fontSize: "4rem",
+		color: "#eee",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "1.5rem",
 		},
@@ -68,9 +69,10 @@ const useStyles = makeStyles((theme) => ({
 
 	socialIcon: {
 		marginRight: "1em",
+		// fill: "#eee",
 	},
 
-	socialIcons: {
+	socialIconsContainer: {
 		margin: "1em",
 	},
 }));
@@ -178,7 +180,7 @@ export default function Header(props) {
 								</Typography>
 							</LightSpeed>
 
-							<div className={classes.socialIcons}>
+							<div className={classes.socialIconsContainer}>
 								<SocialIcon
 									className={classes.socialIcon}
 									url="https://twitter.com/god_speed_23/"
