@@ -16,8 +16,12 @@ import Dice from "../../assets/img/diceJs.gif";
 import Bank from "../../assets/img/easy-bank.PNG";
 import Pokemon from "../../assets/img/PokemonRecord.gif";
 import ChatUs from "../../assets/img/chatus.gif";
-import GoogleClone from "../../assets/img/google-clone.PNG";
-import Keeper from "../../assets/img/keeper.PNG";
+// import GoogleClone from "../../assets/img/google-clone.PNG";
+
+import SolarView from "../../assets/img/solar-view.PNG";
+// import Keeper from "../../assets/img/keeper.PNG";
+import WeatherApp from "../../assets/img/weather-app.PNG";
+import News from "../../assets/img/news-reporter.PNG";
 import cx from "classnames";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -79,7 +83,9 @@ export default function Projects() {
 						{/* item 1 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
-								<CardActionArea>
+								<CardActionArea
+									href="https://supremeking23.github.io/dice-gamejs/"
+									target="_blank">
 									<CardMedia
 										component="img"
 										alt="Js Dice Game"
@@ -174,13 +180,13 @@ export default function Projects() {
 						{/* item 2 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
-								<CardActionArea>
+								<CardActionArea href="https://supremeking23.github.io/solar-system-view-v2/">
 									<CardMedia
 										component="img"
-										alt="Easy Bank Landing Website"
+										alt="Solar System View"
 										height="180"
-										image={Bank}
-										title="Easy Bank Landing Website"
+										image={SolarView}
+										title="Solar System View"
 									/>
 									<CardContent>
 										<Typography
@@ -188,14 +194,14 @@ export default function Projects() {
 											variant="h5"
 											component="h2"
 											className="card-title">
-											Easy Bank Landing Website
+											Solar System View
 										</Typography>
 										<Typography
 											variant="body1"
 											component="p"
 											gutterBottom
 											className="card-description">
-											A landing website excercise from front-end mentor
+											A re-design website of solarview.com using bootstrap 4
 										</Typography>
 
 										<Grid container>
@@ -237,7 +243,7 @@ export default function Projects() {
 													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
-													SASS
+													Bootstrap 4
 												</Typography>
 											</span>
 
@@ -259,7 +265,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://supremeking23.github.io/easybank_landingpage/">
+											href="https://supremeking23.github.io/solar-system-view-v2/earth.html">
 											Live Demo
 										</Link>
 									</Button>
@@ -268,7 +274,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://github.com/supremeking23/easybank_landingpage">
+											href="https://github.com/supremeking23/solar-system-view-v2">
 											Github link
 										</Link>
 									</Button>
@@ -278,7 +284,10 @@ export default function Projects() {
 						{/* item 3 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
-								<CardActionArea>
+								<CardActionArea
+									target="_blank"
+									className="card-link-button"
+									href="https://supremeking23.github.io/pokemon-lite-js/">
 									<CardMedia
 										component="img"
 										alt="Pokemon Lite Application"
@@ -387,7 +396,9 @@ export default function Projects() {
 						{/* item 4 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
-								<CardActionArea>
+								<CardActionArea
+									target="_blank"
+									href="https://youthful-pike-f91484.netlify.app/">
 									<CardMedia
 										component="img"
 										alt="Chat Us Application"
@@ -472,12 +483,14 @@ export default function Projects() {
 						{/* item 5 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
-								<CardActionArea>
+								<CardActionArea
+									href="https://elated-torvalds-7b7b63.netlify.app/"
+									target="_blank">
 									<CardMedia
 										component="img"
 										alt="img"
 										height="180"
-										image={Keeper}
+										image={WeatherApp}
 										title="img"
 									/>
 									<CardContent>
@@ -486,15 +499,15 @@ export default function Projects() {
 											variant="h5"
 											component="h2"
 											className="card-title">
-											Keeper Note
+											Weather Forecaster App
 										</Typography>
 										<Typography
 											variant="body1"
 											className="card-description"
 											component="p"
 											gutterBottom>
-											A web application that let's you store notes. Google keep
-											clone.
+											A web application that gives you the current weather
+											update of specific location.
 										</Typography>
 
 										<Grid container>
@@ -526,7 +539,7 @@ export default function Projects() {
 													className="technology-text"
 													component="span"
 													style={{ fontWeight: "Bold" }}>
-													Material UI
+													openWeatherMapAPI
 												</Typography>
 											</span>
 										</Grid>
@@ -538,7 +551,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://q5mv0.csb.app/">
+											href="https://elated-torvalds-7b7b63.netlify.app/">
 											Live Demo
 										</Link>
 									</Button>
@@ -547,7 +560,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://codesandbox.io/s/keeper-part-3-completed-q5mv0?file=/src/components/App.jsx">
+											href="https://github.com/supremeking23/Weather-App-PWA">
 											Github link
 										</Link>
 									</Button>
@@ -557,13 +570,15 @@ export default function Projects() {
 						{/* item 6 */}
 						<Grid item md={4}>
 							<Card className={classes.card}>
-								<CardActionArea>
+								<CardActionArea
+									href="https://objective-ramanujan-a8fe5e.netlify.app/"
+									target="_blank">
 									<CardMedia
 										component="img"
-										alt="Animal Sound"
+										alt="img"
 										height="180"
-										image={GoogleClone}
-										title="Animal Sound"
+										image={News}
+										title="img"
 									/>
 									<CardContent>
 										<Typography
@@ -571,14 +586,15 @@ export default function Projects() {
 											variant="h5"
 											component="h2"
 											className="card-title">
-											Google UI Clone
+											Global News Reporter AI
 										</Typography>
 										<Typography
 											variant="body1"
 											className="card-description"
 											component="p"
 											gutterBottom>
-											A Google UI clone made from React and Material UI.
+											A React Application that get's the latest news for you.
+											Powered by AI
 										</Typography>
 
 										<Grid container>
@@ -613,6 +629,16 @@ export default function Projects() {
 													Material UI
 												</Typography>
 											</span>
+
+											<span className="project-text">
+												<Typography
+													variant="body2"
+													className="technology-text"
+													component="span"
+													style={{ fontWeight: "Bold" }}>
+													Alan AI
+												</Typography>
+											</span>
 										</Grid>
 									</CardContent>
 								</CardActionArea>
@@ -622,7 +648,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://determined-noether-ee80fb.netlify.app/">
+											href="https://objective-ramanujan-a8fe5e.netlify.app/">
 											Live Demo
 										</Link>
 									</Button>
@@ -631,7 +657,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://github.com/supremeking23/Google-Clone-React">
+											href="https://github.com/supremeking23/news-ai-buddy">
 											Github link
 										</Link>
 									</Button>
