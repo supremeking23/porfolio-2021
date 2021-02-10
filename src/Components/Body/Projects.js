@@ -265,7 +265,7 @@ export default function Projects() {
 											className="card-link-button"
 											underline="none"
 											target="_blank"
-											href="https://supremeking23.github.io/solar-system-view-v2/earth.html">
+											href="https://supremeking23.github.io/solar-system-view-v2/">
 											Live Demo
 										</Link>
 									</Button>

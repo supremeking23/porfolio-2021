@@ -42,7 +42,7 @@ export default function Skills() {
 							justify="center"
 							direction="column"
 							alignItems="center">
-							<Typography variant="h2">My Skill</Typography>
+							<Typography variant="h2">My Skills</Typography>
 							<Typography variant="subtitle1">
 								Languages and Technologies that I have learned and applied to my
 								projects

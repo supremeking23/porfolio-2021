@@ -174,7 +174,7 @@ export default function Body() {
 							<Link href="mailto:icjfuncion@gmail.com">
 								{" "}
 								<Typography variant="body1" className="mail-link">
-									Let's make something secial today ?
+									Let's make something secial.
 								</Typography>
 							</Link>
 						</LightSpeed>
